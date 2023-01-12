@@ -56,4 +56,8 @@ aws lambda invoke \
 #Deletar lambda
 
 aws lambda delete-function  \
-    --function-name $FUNCTION_NAME  \
+    --function-name $FUNCTION_NAME
+
+
+aws iam delete-role \
+    --role-name $ROLE_NAME
